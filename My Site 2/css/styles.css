@@ -1,69 +1,74 @@
 /******************** TAG SELECTORS ********************/
 
 head {
-    background-color: red;
-    margin-top: 0em;
+  background-color: red;
+  margin-top: 0em;
 }
 
 body {
-    background-color: rebeccapurple;
-    margin: 0em;
-    margin-top: 0em;
+  background-color: rebeccapurple;
+  margin: 0em;
+  margin-top: 0em;
+  font-family: "Merriweather", serif;
 }
 
 div {
-    background-color: #90B77D;
-    margin-top: 0em;
-    margin: 0em;
+  background-color: #90b77d;
+  margin-top: 0em;
+  margin: 0em;
 }
 
 h1 {
-    background-color: yellow;
-    margin-top: 0em;
-    padding: 10px;
+  text-align: center;
+  background-color: #90b77d;
+  margin: 3rem auto 0 auto;
+  font-family: "Sacramento", cursive;
+  font-size: 6em;
 }
 
-p {
-    background-color: rgb(166, 166, 233);
+h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
 }
 
-
+h3 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
 
 .cloud-top {
-    position: absolute;
-    right: 300px;
-    top: 50px;
-
+  position: absolute;
+  right: 300px;
+  top: 50px;
 }
 
 .cloud-bottom {
-    position: absolute;
-    left: 300px;
-    bottom: 300px;
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.circle {
+  display: block;
+  margin: 0 auto;
 }
 
 /******************** CLASS SELECTORS ********************/
 
 .top-container {
-    background-color: darkgoldenrod;
-    position: relative;
-    padding: 100px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    text-align: center;
+  background-color: #90b77d;
+  position: relative;
+  padding: 100px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .middle-container {
-    height: 200px;
-    width: 200px;
-    background-color: rgb(188, 23, 128);
 }
 
 .bottom-container {
-    height: 200px;
-    width: 200px;
-    background-color: rgb(93, 164, 192);
-    
 }
 
 
