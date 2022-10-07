@@ -6,23 +6,23 @@ head {
 }
 
 body {
-  background-color: rebeccapurple;
+  background-color: #628E90;
   margin: 0em;
   margin-top: 0em;
   font-family: "Merriweather", serif;
 }
 
 div {
-  background-color: #90b77d;
+  background-color: #628E90;
   margin-top: 0em;
   margin: 0em;
 }
 
 h1 {
   text-align: center;
-  background-color: #90b77d;
+  background-color: #87b4e0;
   margin: 3rem auto 0 auto;
-  font-family: "Sacramento", cursive;
+  font-family: "Silkscreen", cursive;
   font-size: 6em;
 }
 
@@ -37,15 +37,45 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+p {
+  margin: 5%;
+  text-align: center;
+}
+
+hr {
+  width: 75%;
+  height: 1px;
+  background-color:#3C2317;
+  border: none;
+}
+
+/******************** CLASS SELECTORS ********************/
+
+.top-container {
+  background-color:#87b4e0;
+  position: relative;
+  padding: 100px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.middle-container {
+  background-color: #628E90;
+}
+
+.bottom-container {
+}
+
 .cloud-top {
   position: absolute;
-  right: 300px;
+  right: 20%;
   top: 50px;
 }
 
 .cloud-bottom {
   position: absolute;
-  left: 300px;
+  left: 20%;
   bottom: 300px;
 }
 
@@ -54,21 +84,5 @@ h3 {
   margin: 0 auto;
 }
 
-/******************** CLASS SELECTORS ********************/
-
-.top-container {
-  background-color: #90b77d;
-  position: relative;
-  padding: 100px;
-  margin-left: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.middle-container {
-}
-
-.bottom-container {
-}
 
 /******************** ID SELECTORS ********************/
