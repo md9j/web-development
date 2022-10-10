@@ -6,14 +6,14 @@ head {
 }
 
 body {
-  background-color: #628E90;
+  background-color: #628e90;
   margin: 0em;
   margin-top: 0em;
   font-family: "Merriweather", serif;
 }
 
 div {
-  background-color: #628E90;
+  background-color: #628e90;
   margin-top: 0em;
   margin: 0em;
 }
@@ -45,19 +45,20 @@ h3 {
 p {
   margin: 5%;
   text-align: center;
+  line-height: 2;
 }
 
 hr {
   width: 75%;
   height: 1px;
-  background-color:#3C2317;
+  background-color: #3c2317;
   border: none;
 }
 
 /******************** CLASS SELECTORS ********************/
 
 .top-container {
-  background-color:#87b4e0;
+  background-color: #87b4e0;
   position: relative;
   padding: 100px;
   margin-left: 0px;
@@ -66,7 +67,7 @@ hr {
 }
 
 .middle-container {
-  background-color: #628E90;
+  background-color: #628e90;
 }
 
 /* .bottom-container {
@@ -90,5 +91,28 @@ hr {
   margin: 0 auto;
 }
 
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.skill-imgOdd {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-imgEven {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-description {
+  position: relative;
+  margin: 0%;
+  text-align: left;
+  line-height: 2;
+}
 
 /******************** ID SELECTORS ********************/
