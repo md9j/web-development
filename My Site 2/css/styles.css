@@ -55,6 +55,7 @@ hr {
   border: none;
 }
 
+
 /******************** CLASS SELECTORS ********************/
 
 .top-container {
@@ -70,9 +71,14 @@ hr {
   background-color: #628e90;
 }
 
-/* .bottom-container {
-
-} */
+.bottom-container {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  height: 3;
+  text-align: center;
+  background-color: #d73e50;
+}
 
 .cloud-top {
   position: absolute;
@@ -89,6 +95,7 @@ hr {
 .circle {
   display: block;
   margin: 0 auto;
+  scale: 75%;
 }
 
 .skill-row {
@@ -113,6 +120,41 @@ hr {
   margin: 0%;
   text-align: left;
   line-height: 2;
+}
+
+.copyright {
+  color: #B4CDE6;
+  text-align: right;
+}
+
+.footer-link {
+  color: #3C2317;
+  padding: 0 1%;
+}
+
+.contact-me {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-contact {
+  background-color: #f4511e;
+  border: solid;
+  border-radius: 7px;
+  color: #B4CDE6;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  opacity: 1
 }
 
 /******************** ID SELECTORS ********************/
