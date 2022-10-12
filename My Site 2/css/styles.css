@@ -9,6 +9,7 @@ body {
   background-color: #628e90;
   margin: 0em;
   margin-top: 0em;
+  color: #40514E;
   font-family: "Merriweather", serif;
 }
 
@@ -19,7 +20,7 @@ div {
 }
 
 h1 {
-  color: #000000;
+  color: #40514E;
   text-align: center;
   background-color: #87b4e0;
   margin: 3rem auto 0 auto;
@@ -34,6 +35,7 @@ h2 {
   font-family: "Montserrat", san-serif;
   font-size: 2rem;
   font-weight: normal;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -49,19 +51,31 @@ p {
 }
 
 hr {
-  width: 75%;
+  width: 7%;
   height: 1px;
-  background-color: #3c2317;
-  border: none;
+  background-color: none;
+  border: dotted 9px;
+  border-bottom: none;
+  margin: 100px auto;
 }
 
+a {
+  color: #11999e;
+  font-family: "Montserrat", san-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #483838;
+}
 
 /******************** CLASS SELECTORS ********************/
 
 .top-container {
   background-color: #87b4e0;
   position: relative;
-  padding: 100px;
+  padding: 0px auto 0 ;
   margin-left: 0px;
   margin-bottom: 0px;
   text-align: center;
@@ -69,21 +83,28 @@ hr {
 
 .middle-container {
   background-color: #628e90;
+  margin: 100px 0;
 }
 
 .bottom-container {
   position: absolute;
   width: 100%;
-  margin: 0;
+  margin: 50px 0 20px;
   height: 3;
   text-align: center;
   background-color: #d73e50;
+  padding-top: 3rem;
+}
+
+.mountain {
+  position: relative;
+  margin: auto auto 0;
 }
 
 .cloud-top {
   position: absolute;
   right: 20%;
-  top: 50px;
+  top: 40px;
 }
 
 .cloud-bottom {
@@ -123,18 +144,23 @@ hr {
 }
 
 .copyright {
-  color: #B4CDE6;
+  color: #eaf6f6;
   text-align: right;
+  font-size: 0.75rem;
 }
 
 .footer-link {
-  color: #3C2317;
   padding: 0 1%;
 }
 
 .contact-me {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
 }
 
 .btn-contact {
@@ -156,5 +182,11 @@ hr {
 .btn-contact:hover {
   opacity: 1
 }
+
+.intro {
+  width: 60%;
+  margin: auto;
+}
+
 
 /******************** ID SELECTORS ********************/
