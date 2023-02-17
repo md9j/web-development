@@ -26,7 +26,7 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 10%;
 }
 
 /* Navigation Bar */
@@ -59,17 +59,23 @@ h3 {
 
 /* Title Image */
 
+.title {
+  position: relative;
+}
+
 .title-image {
   width: 60%;
   transform: rotate(25deg);
-  margin: 3% 0 0% 20%;
-  padding-bottom: 2rem;
+  position: absolute;
+  right: 27%;
 }
 
 /* Features */
 
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 .feature-box {
@@ -127,11 +133,11 @@ h3 {
 
 /* Pricing */
 
-.card-deck {
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
 
-  display: flex;
-
-
-
-
+.pricing-column {
+  padding: 3% 2%;
 }
