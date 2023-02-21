@@ -1,32 +1,35 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
   font-family: "Montserrat";
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h2 {
-  font-family: "Montserrat";
-  font-weight: Bold;
+.section-heading {
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3 {
-  position: relative;
-}
-
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
+/* Containers */
 
 .container-fluid {
-  padding: 3% 15% 10%;
+  padding: 7% 15%;
 }
 
 /* Navigation Bar */
@@ -57,6 +60,18 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
+/* Title */
+
+#title {
+  background-color: #ff4c68;
+  color: white;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Title Image */
 
 .title {
@@ -73,14 +88,17 @@ h3 {
 /* Features */
 
 #features {
-  padding: 7% 15%;
   background-color: white;
   position: relative;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .feature-box {
   font-family: "Montserrat";
-  text-align: center;
   padding: 5%;
 }
 
@@ -93,11 +111,6 @@ h3 {
   color: #ff4c68;
 }
 
-.icon-task {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .icon-task-description {
   color: #8f8f8f;
 }
@@ -105,9 +118,13 @@ h3 {
 /* Testimonial */
 
 #testimonials {
-  text-align: center;
-  background-color: #ef8172;
+  background-color: #ff4c68;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -116,13 +133,8 @@ h3 {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
-  background-color: #ef8172;
-  text-align: center;
+  background-color: #ff4c68;
   padding-bottom: 3%;
 }
 
@@ -135,7 +147,11 @@ h3 {
 
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -147,22 +163,10 @@ h3 {
 #cta {
   background-color: #ff4c68;
   color: white;
-  text-align: center;
-}
-
-.cta-heading {
-  padding: 5% 10% 0%;
-  text-align: center;
-  font-weight: 900;
-  font-size: 3rem;
 }
 
 /* Footer */
 
-#footer {
-  padding: 7% 15%;
-  text-align: center;
-}
 
 .social-icon {
   margin: 20px 10px;
