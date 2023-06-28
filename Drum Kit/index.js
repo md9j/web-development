@@ -7,6 +7,8 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
     
     makeSound(buttonInnerHTML);
+
+    buttonAnimation(buttonInnerHTML); 
 }
 )};
 
@@ -14,6 +16,8 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 document.addEventListener("keydown", function (event) {
     
     makeSound(event.key);
+
+    buttonAnimation(event.key);
 });
 
 function makeSound(key){
@@ -53,3 +57,17 @@ function makeSound(key){
             break;
     }
 };
+
+function buttonAnimation (currentKey) {
+
+    var activeButton = document.querySelector("." + currentKey);
+
+    var originalClass = activeButton.innerHTML;
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100)
+
+}  // end buttonAnimation()
