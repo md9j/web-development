@@ -12,7 +12,9 @@ $("h1").click(function() {
 $("button").click(function(){
     $("h1").css("color", "orange");
     //  $("h1").fadeToggle();
-    $("h1").slideToggle();
+    // $("h1").slideToggle();
+    // $("h1").animate({margin: 20})
+    $("h1").slideUp().animate({opacity: .5}).slideDown().delay(1500).animate({margin: 75});
 })  // end button.click
 
 $("input").keydown(function(event){
