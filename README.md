@@ -18,7 +18,8 @@ Working through the fundamentals of web development for websites and web based a
 12. Postman Testing
 13. QR Code Generator
 14. Rollem
-15. Simon Game
-16. TindogSite
+15. Secrets
+16. Simon Game
+17. TindogSite
 
 - yes, all dependencies are saved here... because i wanted to
