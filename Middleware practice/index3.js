@@ -1,0 +1,19 @@
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+app.use(logger);
+
+app.get("/", (req, res) => {
+  res.send("Hello");});
+
+app.listen(port, () => {
+  console.log(`It's me, port ${port}, I'm the listening port it's me`);
+});
+
+function logger(req, res, next) {
+  console.log("Request method: ", req.method);
+  console.log("Request URL: ", req.url);
+  next();
+};
