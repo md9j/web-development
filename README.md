@@ -21,5 +21,3 @@ Working through the fundamentals of web development for websites and web based a
 15. Secrets
 16. Simon Game
 17. TindogSite
-
-- yes, all dependencies are saved here... because i wanted to
