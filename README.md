@@ -10,14 +10,16 @@ Working through the fundamentals of web development for websites and web based a
  4. CSS - Bacon Fansite
  5. DOM manipulation
  6. Drum Kit
- 7. html personal site
- 8. jQuery
- 9. Middleware practice
-10. My Site 2
-11. my-express-server
-12. Postman Testing
-13. QR Code Generator
-14. Rollem
-15. Secrets
-16. Simon Game
-17. TindogSite
+ 7. EJS
+ 8. EJS Tags
+ 9. html personal site
+10. jQuery
+11. Middleware practice
+12. My Site 2
+13. my-express-server
+14. Postman Testing
+15. QR Code Generator
+16. Rollem
+17. Secrets
+18. Simon Game
+19. TindogSite
