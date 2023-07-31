@@ -8,15 +8,22 @@
 </head>
 
 <body>
-  <% if(locals.letterCount) { %>
-    <h1>The total length of your name is <%=locals.letterCount%> letters</h1>
-    <% } else{%>
-  <h1>Enter your name below:</h1>
-  <%}%>
+  <!-- Conditional EJS tag: Check if locals.letterCount exists -->
+  <% if (locals.letterCount) { %>
+    <!-- Display the total length of the name if letterCount exists -->
+    <h1>The total length of your name is <%= locals.letterCount %> letters</h1>
+  <% } else { %>
+    <!-- Display this section if letterCount does not exist (undefined or false) -->
+    <h1>Enter your name below:</h1>
+  <% } %>
 
+  <!-- Form for name input -->
   <form action="/submit" method="POST">
+    <!-- Input field for the first name -->
     <input type="text" name="fName" placeholder="First name">
+    <!-- Input field for the last name -->
     <input type="text" name="lName" placeholder="Last name">
+    <!-- Submit button -->
     <input type="submit" value="OK">
   </form>
 </body>
