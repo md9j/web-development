@@ -1,6 +1,6 @@
 # web-development
 
-Working through the fundamentals of web development for websites and web based applications.
+Working through the fundamentals of web development for websites and web based applications. Concepts are completed in a simplistic and minimalist fashion for understanding and reference.
 
 - more details to come.
 
@@ -11,15 +11,16 @@ Working through the fundamentals of web development for websites and web based a
  5. DOM manipulation
  6. Drum Kit
  7. EJS
- 8. EJS Tags
- 9. html personal site
-10. jQuery
-11. Middleware practice
-12. My Site 2
-13. my-express-server
-14. Postman Testing
-15. QR Code Generator
-16. Rollem
-17. Secrets
-18. Simon Game
-19. TindogSite
+ 8. EJS Passing Data
+ 9. EJS Tags
+10. html personal site
+11. jQuery
+12. Middleware practice
+13. My Site 2
+14. my-express-server
+15. Postman Testing
+16. QR Code Generator
+17. Rollem
+18. Secrets
+19. Simon Game
+20. TindogSite
