@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJS Tags</title>
+</head>
+
+<body>
+    <!-- Display the 'title' variable in an <h1> heading -->
+    <h1><%= title %></h1>
+
+    <!-- Display the current second using the 'seconds' variable -->
+    <p>Current second: <%= seconds %></p>
+
+    <!-- Check if the 'seconds' variable is even using an if statement -->
+    <% if (seconds % 2 === 0) { %>
+
+    <!-- If 'seconds' is even, display an unordered list -->
+    <ul>
+        <!-- Use forEach loop to iterate over the 'items' array -->
+        <% items.forEach(function(fruit) { %>
+        <li><%= fruit %></li>
+        <% }); %>
+    </ul>
+    <% } else { %>
+
+    <!-- If 'seconds' is odd, display a message -->
+    <p>No items to display</p>
+
+    <!-- End of else block -->
+    <% } %>
+
+    <!-- Output the 'htmlContent' variable as raw HTML (unescaped) -->
+    <p><%- htmlContent %></p>
+
+    <!-- Include the contents of the "footer.ejs" template -->
+    <%- include("footer.ejs") %>
+</body>
+</html>
