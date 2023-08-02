@@ -69,10 +69,6 @@ The project structure is designed to organize the code and assets effectively. I
 - `express`: Used to create a web server and handle routes.
 - `body-parser`: Used to parse URL-encoded form data.
 
-## Author
-
-[Your Name]
-
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
