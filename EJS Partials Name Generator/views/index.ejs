@@ -1,0 +1,18 @@
+<!-- Include the header partial -->
+<%- include("partials/header.ejs") %>
+
+<!-- Check if randomAdj and randomNoun are available in locals to display -->
+<% if (locals.randomAdj && locals.randomNoun) { %>
+  <h1><%= locals.randomAdj %> <%= locals.randomNoun %></h1>
+<% } else { %>
+  <!-- Default Text -->
+  <h1>Generate a Name</h1>
+<% } %>
+
+<!-- Form to submit the request -->
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<!-- Include the footer partial -->
+<%- include("partials/footer.ejs") %>
