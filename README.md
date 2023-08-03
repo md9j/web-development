@@ -15,14 +15,15 @@ Working through the fundamentals of web development for websites and web based a
  9. EJS Partials Name Generator
 10. EJS Passing Data
 11. EJS Tags
-12. html personal site
-13. jQuery
-14. Middleware practice
-15. My Site 2
-16. my-express-server
-17. Postman Testing
-18. QR Code Generator
-19. Rollem
-20. Secrets
-21. Simon Game
-22. TindogSite
+12. EJS To Do List
+13. html personal site
+14. jQuery
+15. Middleware practice
+16. My Site 2
+17. my-express-server
+18. Postman Testing
+19. QR Code Generator
+20. Rollem
+21. Secrets
+22. Simon Game
+23. TindogSite
