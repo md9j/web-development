@@ -3,7 +3,8 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const tasks = [];
+
+var tasks = [];
 
 // Set the view engine to EJS
 app.set("view engine", "ejs");
@@ -32,3 +33,8 @@ app.post("/submit", (req, res) => {
     // Render the "index.ejs" view via returning to home route, prevent duplicate tasks on refesh
     res.redirect("/");
     });
+
+app.post("/clear", (req, res) => {
+    tasks = [];
+    res.redirect("/");
+});

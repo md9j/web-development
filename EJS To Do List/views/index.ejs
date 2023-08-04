@@ -1,31 +1,48 @@
 <!-- Include the header partial -->
 <%- include("partials/header.ejs") %>
 
-<h1>To-Do</h1>
-
+<div class="taskEntry">
+    <h1>Task Entry</h1>
 <!-- Form for task input -->
 <form action="/submit" method="POST">
     <!-- Input field for task -->
-    <input type="text" name="task" placeholder="Task" required>
+    <input type="text" name="task" placeholder="Task" required />
     <!-- Input field for the complete by -->
-    <input type="text" name="startTime" placeholder="Start Time">
+    <input type="text" name="startTime" placeholder="Start Time" />
     <!-- Input field for the complete by -->
-    <input type="text" name="completeTime" placeholder="Complete Time">
+    <input type="text" name="completeTime" placeholder="Complete Time" />
     <!-- Submit/Add To List button -->
-    <input type="submit" value="Add To List">
+    <input type="submit" value="Add To List" />
 </form>
+</div>
 
+<h1 class="title">Task List</h1>
+<div class="taskList">
 <!-- Check if task is not empty and available in locals to display -->
 <% if (locals.tasks && locals.tasks.length > 0) { %>
-    <% locals.tasks.forEach(task => { %>
-    <h2><input type="checkbox"> <%= task.task %>: <%= task.startTime %> - <%= task.completeTime %></h2>
-    <% }) %>
-    <% } else { %>
-    <!-- Default Text -->
-    <h3>Nothing To Do Yet</h3>
-    <% } %>
+<h1>To-Do</h1>
+<% locals.tasks.forEach(task => { %>
+<h2>
+    <input type="radio" /> <%= task.task %>: <%= task.startTime %> - <%=
+    task.completeTime %>
+</h2>
+<% }) %> 
+<!-- clear task list-->
+<form action="/clear" method="POST">
+    <button type="submit">Clear All Tasks</button>
+</form>
+<!-- add tap task to strike through / button to remove striked tasked -->
 
-<!-- add clear list button / tap task to strike through / button to remove striked tasked -->
+<% } else { %>
+<!-- Default Text -->
+<h3>Nothing To Do Yet</h3>
+<% } %>
+</div>
+
+
+
+
+
 
 <!-- Include the footer partial -->
 <%- include("partials/footer.ejs") %>
