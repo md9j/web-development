@@ -1,48 +1,91 @@
 /* ******* TAG SELECTORS ******* */
 h1 {
-    color: #D8D9DA;
+    color: black;
     font-size: 50px;
 }
 
 body {
-    background-color: #272829;
+    background-color: #0b1426;
 }
 
 /* ******* CLASS SELECTORS ******* */
 .taskEntry {
-    background-color: #61677A;
+    background-color: #132240;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+    width: 80%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
 .taskList {
-    background-color: #FFF6E0;
+    background-color: #789ebf;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #375ca6;
     border-radius: 5px;
     width: 60%;
 }
 
-.title {
+.title1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+.title2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.title3 {
+    color: white;
     font-size: 40px;
     font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    color: whitesmoke;
+}
+
+.strikethrough-text {
+    cursor: pointer;
+}
+.strikethrough-text.completed {
+    text-decoration: line-through;
+}
+
+.addTask {
+    background-color: #789EBF
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 10px auto;
+    z-index: -1;
 }
 
 .copyright {
     font-size: 10px;
     text-align: right;
+    margin-right: 5rem;
+    color: whitesmoke;
 }
 
 /* ******* ID SELECTORS ******* */
