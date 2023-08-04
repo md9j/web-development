@@ -5,7 +5,7 @@
 <div class="taskEntry">
     <h1 class="title2">Task Entry</h1>
     <!-- Form for task input -->
-    <form action="/submit" method="POST">
+    <form action="/submitTask" method="POST">
         <!-- Input field for task -->
         <input type="text" name="task" placeholder="Task" required />
         <!-- Input field for the complete by -->
@@ -16,24 +16,26 @@
         <input class="addTask" type="submit" value="Add To List" />
     </form>
 </div>
-
-<!-- Task List Section -->
-<h1 class="title3">What Do I Need To Do...</h1>
+<h1>test</h1>
+<!-- Task/Reward List Section -->
+<div class="listTitles">
+    <span><h1 class="title3">What Do I Need To Do...</h1></span>
+    <span><h1 class="title3">... What Is My Reward</h1></span>
+</div>
 
 <div class="taskList">
     <!-- Check if task is not empty and available in locals to display -->
-    <% if (locals.tasks && locals.tasks.length > 0) { %> 
-    <% locals.tasks.forEach(task => { %>
+    <% if (locals.tasks && locals.tasks.length > 0) { %> <%
+    locals.tasks.forEach(task => { %>
     <div class="strikethrough-text">
         <h2>
-            ▷ <%= task.task %>: <%= task.startTime %> - <%=
-            task.completeTime %>
+            ▷ <%= task.task %>: <%= task.startTime %> - <%= task.completeTime %>
         </h2>
     </div>
     <% }) %>
 
     <!-- clear task list button -->
-    <form action="/clear" method="POST">
+    <form action="/clearTask" method="POST">
         <button type="submit">Clear All Tasks</button>
     </form>
 
@@ -45,7 +47,6 @@
 
 <!-- jquery script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 
 <script>
     $(document).ready(function () {
