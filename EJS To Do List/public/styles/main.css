@@ -52,8 +52,17 @@ body {
     color: white;
     font-size: 40px;
     font-weight: bold;
-    text-align: left;
-    margin-left: 5%;
+    /* text-align: left; */
+    margin: 0;
+}
+
+.listTitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 3rem auto;
+    align-items: center;
 }
 
 .tagline {
