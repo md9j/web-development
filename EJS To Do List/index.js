@@ -25,15 +25,17 @@ app.get("/", (req, res) => {
     res.render("index.ejs", { tasks });
 });
 
+// Add task to the list
 app.post("/submitTask", (req, res) => {
     const { task, startTime, completeTime } = req.body;
     const newTask = { task, startTime, completeTime };
     tasks.push(newTask);
 
-    // Render the "index.ejs" view via home route redirect, prevent duplicate tasks on refesh
+    // Render "index.ejs" view via '/'' route redirect, prevent duplicate tasks on refesh
     res.redirect("/");
     });
 
+// Clear all tasks from the list
 app.post("/clearTasks", (req, res) => {
     tasks = [];
     res.redirect("/");
