@@ -25,23 +25,22 @@
 
 <div class="taskList">
     <!-- Check if task is not empty and available in locals to display -->
-    <% if (locals.tasks && locals.tasks.length > 0) { %> <%
-    locals.tasks.forEach(task => { %>
-    <div class="strikethrough-text">
-        <h2>
-            ▷ <%= task.task %>: <%= task.startTime %> - <%= task.completeTime %>
-        </h2>
-    </div>
-    <% }) %>
+    <% if (locals.tasks && locals.tasks.length > 0) { %>
+        <% locals.tasks.forEach(task => { %>
+        <div class="strikethrough-text">
+            <h2>
+                ▷ <%= task.task %>: <%= task.startTime %> - <%= task.completeTime %>
+            </h2>
+        </div>
+        <% }) %>
 
-    <!-- clear task list button -->
-    <form action="/clearTask" method="POST">
-        <button type="submit">Clear All Tasks</button>
-    </form>
-
+        <!-- clear task list button -->
+        <form action="/clearTasks" method="POST">
+            <button type="submit">Clear All Tasks</button>
+        </form>
     <% } else { %>
-    <!-- Default Text -->
-    <h3>Nothing To Do Yet</h3>
+        <!-- Default Text -->
+        <h3>Nothing To Do Yet</h3>
     <% } %>
 </div>
 
@@ -58,3 +57,4 @@
 
 <!-- Include the footer partial -->
 <%- include("partials/footer.ejs") %>
+
