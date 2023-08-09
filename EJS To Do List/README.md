@@ -25,6 +25,6 @@ The repository is organized as follows:
 - `package.json`: This file contains metadata about the project and its dependencies.
 - `README.md`: This is the main README file that provides information about the project.
 
-6 directories, 9 files
+
 
 The project structure is designed to organize the code and assets effectively. It follows common conventions for web development projects.
