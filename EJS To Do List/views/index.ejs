@@ -1,52 +1,19 @@
 <!-- Include the header partial -->
 <%- include("partials/header.ejs") %>
 
-<!-- Task Entry Box -->
-<div class="taskEntry">
-    <h1 class="title2">Task Entry</h1>
-    <!-- Form for task input -->
-    <form action="/submitTask" method="POST">
-        <!-- Input field for task -->
-        <input type="text" name="task" placeholder="Task" required />
-        <!-- Input field for the complete by -->
-        <input type="text" name="startTime" placeholder="Start Time" />
-        <!-- Input field for the complete by -->
-        <input type="text" name="completeTime" placeholder="Complete Time" />
-        <!-- Submit/Add To List button -->
-        <input class="addTask" type="submit" value="Add To List" />
-    </form>
-</div>
-
 <!-- Task/Reward List Section -->
 <div class="listTitles">
     <span><h1 class="title3">What Do I Need To Do...</h1></span>
     <span><h1 class="title3">... What Is My Reward</h1></span>
 </div>
 
-<div class="taskList">
-    <!-- Check if task is not empty and available in locals to display -->
-    <% if (locals.tasks && locals.tasks.length > 0) { %>
-        <% locals.tasks.forEach(task => { %>
-        <div class="strikethrough-text">
-            <h2>
-                ▷ <%= task.task %>: <%= task.startTime %> - <%= task.completeTime %>
-            </h2>
-        </div>
-        <% }) %>
-
-        <!-- clear task list button -->
-        <form action="/clearTasks" method="POST">
-            <button type="submit">Clear All Tasks</button>
-        </form>
-    <% } else { %>
-        <!-- Default Text -->
-        <h3>Nothing To Do Yet</h3>
-    <% } %>
-</div>
+<% if(viewTaskList) { %> <%- include("partials/tasks.ejs") %> <% } else { %> <%-
+include("partials/rewards.ejs") %> <% } %>
 
 <!-- jquery script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<!-- jquery strikethrough script -->
 <script>
     $(document).ready(function () {
         $(".strikethrough-text").click(function () {
@@ -55,6 +22,22 @@
     });
 </script>
 
+<!-- jquery active list title script -->
+<script>
+    $(document).ready(function () {
+        $(".title3").click(function () {
+            $(this).toggleClass("inactive");
+            $("#toggleListsForm").submit();
+        });
+    });
+</script>
+<style>
+    .inactive {
+        color: #ff8c00;
+    }
+</style>
+<!-- Add this form at the end of the index.ejs file -->
+<form id="toggleListsForm" action="/toggleLists" method="POST"></form>
+
 <!-- Include the footer partial -->
 <%- include("partials/footer.ejs") %>
-

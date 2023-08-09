@@ -1,0 +1,33 @@
+<!-- Reward Entry Box -->
+<div class="taskEntry">
+    <h1 class="title2">Reward Entry</h1>
+    <!-- Form for task input -->
+    <form action="/submitReward" method="POST">
+        <!-- Input field for task -->
+        <input type="text" name="reward" placeholder="Reward" required />
+        <!-- Submit/Add To List button -->
+        <input class="addTask" type="submit" value="Add To List" />
+    </form>
+</div>
+
+<!-- Reward List -->
+<div class="taskList">
+    <!-- Check if task is not empty and available in locals to display -->
+    <% if (rewards && rewards.length > 0) { %>
+        <% rewards.forEach(reward => { %>
+        <div class="strikethrough-text">
+            <h2>
+                ▷ <%= reward %>
+            </h2>
+        </div>
+        <% }) %>
+
+        <!-- clear reward list button -->
+        <form action="/clearRewards" method="POST">
+            <button type="submit">Clear All Rewards</button>
+        </form>
+    <% } else { %>
+        <!-- Default Text -->
+        <h3>No Rewards Yet</h3>
+    <% } %>
+</div>

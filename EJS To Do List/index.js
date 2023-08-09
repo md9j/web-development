@@ -5,6 +5,9 @@ const app = express();
 const port = 3000;
 
 var tasks = [];
+var rewards = [];
+var viewTaskList = true;
+var viewRewardList = false;
 
 // Set the view engine to EJS
 app.set("view engine", "ejs");
@@ -22,7 +25,14 @@ app.listen(port, () => {
 
 // Route handlers
 app.get("/", (req, res) => {
-    res.render("index.ejs", { tasks });
+    res.render("index.ejs", { tasks, rewards, viewTaskList, viewRewardList });
+});
+
+// Toggle between task and reward lists
+app.post("/toggleLists", (req, res) => {
+    viewTaskList = !viewTaskList;
+    viewRewardList = !viewRewardList;
+    res.redirect("/");
 });
 
 // Add task to the list
@@ -35,8 +45,23 @@ app.post("/submitTask", (req, res) => {
     res.redirect("/");
     });
 
+// Add reward to the list
+app.post("/submitReward", (req, res) => {
+    
+    rewards.push(req.body.reward);
+
+    // Render "index.ejs" view via '/'' route redirect, prevent duplicate tasks on refesh
+    res.redirect("/");
+    });
+
 // Clear all tasks from the list
 app.post("/clearTasks", (req, res) => {
     tasks = [];
+    res.redirect("/");
+});
+
+// Clear all rewards from the list
+app.post("/clearRewards", (req, res) => {
+    rewards = [];
     res.redirect("/");
 });
