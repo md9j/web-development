@@ -1,13 +1,10 @@
 # PROcrasta-List
 
-## Things to Add
+## Simple To Do List App
 
-    - functionality for a second list, Rewards
-        - rewards[]
-        - partials for each list
-        - clear rewards[]
-        - add reward
-        - toggle between task and reward list
+* This is a simple to do list app that allows users to add and delete items from a list. It is built using Node.js, Express, and EJS. It is an example of how to use EJS to generate dynamic HTML pages on the server.
+
+* Lists are not persistant as there is no database. The list is stored in an array in the server's memory. This means that the list will be reset every time the server is restarted.
 
 ## File Structure
 
