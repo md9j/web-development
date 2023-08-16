@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #7ae472;
+  background-image: url("./images/tacoShopWall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: -1;
+}
+@font-face {
+  font-family: "Taco";
+  src: url("./fonts/PistolGripPump.ttf");
+}
+
+h1 {
+  display: inline;
+  font-family: "Taco";
+  font-size: 5rem;
+  text-align: center;
+  color: #7ae472;
+  
+  backdrop-filter: blur(2.3px);
+}
+
+h2 {
+  color: #7ae472;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  font-size: 5rem;
+}
+
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.3px);
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#recipeContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.3px);
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recipeTitle {
+  font-family: "Taco";
+  color:#7ae472;
+  font-size: 2.3rem;
+}
+
+.recipePrice {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#7ae472;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#ingredientsList {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#f5ac02;
+  margin: 10px auto 15px auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+#ingredientsList li {
+  margin-bottom: 10px;
+  color: whitesmoke;
+  margin: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tacos</title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+
+<body>
+  <h1 class="background">Taco 🌮 Hut</h1>
+
+  <form action="/recipe" method="POST" class="buttons">
+    <button type="submit" value="0001" name="choice">🍗</button>
+    <button type="submit" value="0002" name="choice">🥩</button>
+    <button type="submit" value="0003" name="choice">🐟</button>
+  </form>
+  <div id="recipeContainer" class="hidden">
+    
+    <% if(!recipe){ %>
+    <h2>👆 Pick your taco protein 👆</h2>
+    <% } else { %> 
+      <!-- Display selected recipe details -->
+      <h2 id="recipeTitle"><%= recipe.name %></h2>
+      <h2 class="recipePrice">$<%= recipe.price %></h2>
+      <br/>
+      <h3 id="ingredientsList">Ingredients:</h3>
+      <% } %>
+      <ul id="ingredientsList">
+        <% if(recipe){ %>
+        <!-- Loop through toppings and display them -->
+        <li><%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %></li>
+        <li><%= recipe.ingredients.salsa.name %>, <%= recipe.ingredients.salsa.spiciness %></li>
+        <% recipe.ingredients.toppings.forEach(topping=> { %>
+        <li><%= topping.quantity %> of <%= topping.name %></li>
+        <% }) %>
+        <% } %>
+      </ul>
+  </div>
+</body>
+
+</html>
