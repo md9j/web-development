@@ -5,7 +5,7 @@ Working through the fundamentals of web development for websites and web based a
 - more details to come.
 
 ## Projects
-This project list is auto-generated from the `projects` directory.
+This project list is auto-generated from the `web-development` workspace.
 <!-- START: projects list -->
 1. Axios Bored API Requests
 2. BMI
