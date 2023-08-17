@@ -1,4 +1,4 @@
-# Bored Outta My Gourd
+# Axios API Requests: Bored Outta My Gourd
 
 A simple web application that suggests activities to do when you're bored. This application fetches activity suggestions from the Bored API and displays them on the webpage. Users can also filter activities based on their type and the number of participants.
 
@@ -8,8 +8,6 @@ A simple web application that suggests activities to do when you're bored. This 
 2. Install the required dependencies using the following command:
 npm install
 
-sql
-Copy code
 3. Start the server by running:
 npm start
 
