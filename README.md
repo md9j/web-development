@@ -4,6 +4,7 @@ Working through the fundamentals of web development for websites and web based a
 
 - more details to come.
 
+<!-- START: projects list -->
 1. BMI
 2. Bootstrap-installation
 3. CSS - Bacon Fansite
@@ -28,3 +29,4 @@ Working through the fundamentals of web development for websites and web based a
 22. html personal site
 23. jQuery
 24. my-express-server
+<!-- END: projects list -->
