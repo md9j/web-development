@@ -18,12 +18,13 @@ Working through the fundamentals of web development for websites and web based a
 12. EJS To Do List
 13. html personal site
 14. jQuery
-15. Middleware practice
-16. My Site 2
-17. my-express-server
-18. Postman Testing
-19. QR Code Generator
-20. Rollem
-21. Secrets
-22. Simon Game
-23. TindogSite
+15. JSON Tacos
+16. Middleware practice
+17. My Site 2
+18. my-express-server
+19. Postman Testing
+20. QR Code Generator
+21. Rollem
+22. Secrets
+23. Simon Game
+24. TindogSite
