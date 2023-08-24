@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <title>Secrets API Auth App</title>
+</head>
+
+<body>
+  <div class="title">
+  <h1>Secrets...</h1>
+  </div>
+
+  <div class="buttonBox">
+  <button class="custom-btn btn-2" type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
+  <button class="custom-btn btn-2" id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
+  <button class="custom-btn btn-2" id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
+  <button class="custom-btn btn-2" id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
+  </div>
+
+  <div class="response-area">
+    <h2>OMG! I can't believe you just told me ...</h2>
+    <p>
+        <% if (content) { %>
+            <% if (Array.isArray(content)) { %>
+                <% content.forEach(item => { %>
+                    <p>"<%= item.secret %>"</p>
+                <% }) %>
+            <% } else { %>
+                <p>"<%= content.secret %>"</p>
+            <% } %>
+        <% } %>
+        <% if (error) { %>
+            <p>❌ <%= error %> ❌</p>
+        <% } %>
+        <% if (!content && !error) { %>
+            <p>... your secret</p>
+        <% } %>
+    </p>
+</div>
+  </div>
+</body>
+
+</html>

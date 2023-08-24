@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url("/images/manReactsT0Secret.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: "Typewriter";
+    src: url("fonts/momsTypewriter.ttf");
+}
+
+.title {
+    position: relative;
+    left: 2%;
+    top: 2%;
+    width: 100%;
+    
+}
+
+.title h1 {
+    position: relative;
+    color: black;
+    backdrop-filter: blur(2.3px);
+    font-family: "Typewriter";
+    font-size: 7rem;
+    text-align: left;
+    width: fit-content;
+    transform: rotate(-15deg);
+    text-shadow:
+    1px 1px 2px red,
+    0 0 1em rgb(227, 114, 114),
+    0 0 0.2em rgb(153, 7, 7);
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 55% 5% 5%;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 
+        2px 2px 2px 0px rgba(0, 0, 0, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.5),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.btn-2 {
+    /* background: rgb(96,9,240); */
+    /* background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%); */
+    border: none;
+    
+}
+.btn-2:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-2:hover {
+    box-shadow:
+    4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+#noAuth {
+    background: rgb(32, 165, 158); */
+    background: linear-gradient(0deg, rgba(32, 165, 158,1) 0%, rgba(32, 165, 158,1) 100%);
+}
+
+#basicAuth {
+    background: rgb(32, 165, 27);
+    background: linear-gradient(0deg, rgba(32, 165, 27,1) 0%, rgba(32, 165, 27,1) 100%);
+}
+
+#apiKey {
+    background: rgb(170, 165, 32);
+    background: linear-gradient(0deg, rgba(170, 165, 32,1) 0%, rgba(170, 165, 32,1) 100%);
+}
+
+#bearerToken {
+    background: rgb(165, 24, 32); */
+    background: linear-gradient(0deg, rgba(165, 24, 32,1) 0%, rgba(165, 24, 32,1) 100%);
+}
+
+.response-area {
+    position: relative;
+    margin: 10px 10%;
+    background-color: rgba(188, 49, 90, 0.3);
+    backdrop-filter: blur(2.3px);
+    padding: 20px;
+    border: black solid 1px;
+    border-radius: 5px;
+    font-family: "Typewriter";
+}
