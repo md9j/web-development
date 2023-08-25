@@ -29,7 +29,7 @@ body {
     position: relative;
     color: black;
     backdrop-filter: blur(2.3px);
-    font-family: "Typewriter";
+    font-family: 'Typewriter', monospace;
     font-size: 7rem;
     text-align: left;
     width: fit-content;
@@ -99,7 +99,7 @@ button {
 }
 
 #noAuth {
-    background: rgb(32, 165, 158); */
+    background: rgb(32, 165, 158);
     background: linear-gradient(0deg, rgba(32, 165, 158,1) 0%, rgba(32, 165, 158,1) 100%);
 }
 
@@ -114,7 +114,7 @@ button {
 }
 
 #bearerToken {
-    background: rgb(165, 24, 32); */
+    background: rgb(165, 24, 32);
     background: linear-gradient(0deg, rgba(165, 24, 32,1) 0%, rgba(165, 24, 32,1) 100%);
 }
 
@@ -127,4 +127,93 @@ button {
     border: black solid 1px;
     border-radius: 5px;
     font-family: "Typewriter";
+}
+
+/* Modal */
+
+#description-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    align-content: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-title {
+    color: #131212;
+    font-family: "Typewriter";
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fancy-text {
+    position: relative;
+    margin-right: 1rem;
+    color: black;
+    font-family: "Typewriter";
+    font-size: 2.5rem;
+    transform: rotate(-15deg);
+    text-shadow:
+    1px 1px 2px red,
+    0 0 1em rgb(227, 114, 114),
+    0 0 0.2em rgb(153, 7, 7);
+}
+
+#modal-content {
+    background-color: #0e8ea299;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1.5rem;
+    width: 80%;
+    height: 65%;
+    backdrop-filter: blur(3px);
+
+}
+
+#modal-content li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    text-align: left;
+    margin: 4% 5%;
+}
+
+#open-modal-btn {
+    position: fixed;
+    right: 1%;
+    top: 2%;
+    z-index: 1;
+    background-color: #f44336;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-btn {
+    color: #0a0a0a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

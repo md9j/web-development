@@ -2,43 +2,61 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <title>Secrets API Auth App</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    
+    <title>Secrets API Auth App</title>
 </head>
 
 <body>
-  <div class="title">
-  <h1>Secrets...</h1>
-  </div>
+    <button id="open-modal-btn" class="custom-btn btn-2">?</button>
 
-  <div class="buttonBox">
-  <button class="custom-btn btn-2" type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
-  <button class="custom-btn btn-2" id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
-  <button class="custom-btn btn-2" id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
-  <button class="custom-btn btn-2" id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
-  </div>
+    <% if (isHomePage || showModal) { %>
+        <div id="description-modal" class="modal">
+            <div id="modal-content">
+                <span id="close-btn">&times;</span>
+                <h2 class="modal-title"><span class="fancy-text">Secrets</span>  API Auth App</h2>
+                <h3 class="modal-title">What is this?</h3>
+                <li>Want to know the darkest secrets of strangers? Well, I can't help you with that but I can help you see the G-Rated secrets of strangers from around the world! </li>
+                <li>This is a simple web application that interacts with an API called "Secrets API" using various authentication methods. </li>
+                <li>Each of the buttons ("No Auth", "Basic Auth", "API Key", "Bearer Token") will interact with the API using the labeled authorization/authentication method.</li>
+                <li>Each button click will trigger a request to be made with the appropriate credentialing included within an authorization header, query parameters, or a combination of both.</li>
+            </div>
+        </div>
+    <% } %>
 
-  <div class="response-area">
-    <h2>OMG! I can't believe you just told me ...</h2>
-    <p>
-        <% if (content) { %>
-            <% if (Array.isArray(content)) { %>
-                <% content.forEach(item => { %>
-                    <p>"<%= item.secret %>"</p>
-                <% }) %>
-            <% } else { %>
-                <p>"<%= content.secret %>"</p>
+    <div class="title">
+        <h1>Secrets...</h1>
+    </div>
+
+    <div class="buttonBox">
+        <button class="custom-btn btn-2" type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
+        <button class="custom-btn btn-2" id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
+        <button class="custom-btn btn-2" id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
+        <button class="custom-btn btn-2" id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
+    </div>
+
+    <div class="response-area">
+        <h2>OMG! I can't believe you just told me ...</h2>
+        <p>
+            <% if (content) { %>
+                <% if (Array.isArray(content)) { %>
+                    <% content.forEach(item => { %>
+                        <p>"<%= item.secret %>"</p>
+                    <% }) %>
+                <% } else { %>
+                    <p>"<%= content.secret %>"</p>
+                <% } %>
             <% } %>
-        <% } %>
-        <% if (error) { %>
-            <p>❌ <%= error %> ❌</p>
-        <% } %>
-        <% if (!content && !error) { %>
-            <p>... your secret</p>
-        <% } %>
-    </p>
-</div>
-  </div>
+            <% if (error) { %>
+                <p>❌ <%= error %> ❌</p>
+            <% } %>
+            <% if (!content && !error) { %>
+                <p>... your secret</p>
+            <% } %>
+        </p>
+    </div>
+
+    <script src="scripts/modal.js"></script>
 </body>
 
-</html>
+</html> 
