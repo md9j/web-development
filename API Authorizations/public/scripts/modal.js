@@ -2,12 +2,7 @@ const modal = document.getElementById('description-modal');
 const btn = document.getElementById('open-modal-btn');
 const span = document.getElementById('close-btn');
 
-window.onload = function() {
-    modal.style.display = 'block';
-}
-
 btn.onclick = function() {
-    showModal = true;
     modal.style.display = 'block';
 }
 
