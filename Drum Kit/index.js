@@ -71,3 +71,18 @@ function buttonAnimation (currentKey) {
     }, 100)
 
 }  // end buttonAnimation()
+
+// mouse click
+document.addEventListener("click", function(event) {
+    const flash = document.getElementById("flash");
+    const x = event.clientX - 50;
+    const y = event.clientY - 50;
+
+    flash.style.left = x + "px";
+    flash.style.top = y + "px";
+    flash.style.opacity = 1;
+
+    setTimeout(function() {
+        flash.style.opacity = 0;
+    }, 300);
+});
