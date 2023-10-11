@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="styles/stylesheets/weatherStyle.css">
+
+
+  <title>Weather Nut</title>
+</head>
+<body>
+  <h1>Weather Nut</h1>
+
+  <form>
+    <label for="zip-code">Zip Code:</label>
+    <input type="text" id="zip-code" name="zip-code"><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"><br>
+
+    <label for="country">Select a Country:</label>
+    <select id="country">
+    <% countryList.forEach(function(country) { %>
+      <option value="<%= country.key %>" <% if (country.value === "United States of America (the)") { %>selected<% } %>><%= country.value %></option>
+    <% }); %>
+    </select>
+
+    <br>
+
+    <input type="checkbox" id="by-the-minute" name="by-the-minute">
+    <label for="by-the-minute">By the Minute</label><br>
+
+    <input type="checkbox" id="hourly" name="hourly">
+    <label for="hourly">Hourly</label><br>
+
+    <input type="checkbox" id="daily" name="daily">
+    <label for="daily">Daily</label><br>
+
+    <input type="checkbox" id="alerts" name="alerts">
+    <label for="alerts">Alerts</label><br>
+
+  </form>
+
+</body>
+</html>
