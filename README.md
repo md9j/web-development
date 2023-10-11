@@ -33,4 +33,5 @@ This project list is auto-generated from the `web-development` workspace.
 24. html personal site
 25. jQuery
 26. my-express-server
+27. weatherService
 <!-- END: projects list -->
