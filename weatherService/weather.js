@@ -7,7 +7,8 @@ import fs from "fs";
 
 dotenv.config();
 
-const API_KEY = process.env.API_KEY;
+const OPENWEATHER_API_KEY = process.env.API_KEY;
+const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const app = express();
 const pathToCountriesJSON = "data/countries.json";
 
@@ -23,7 +24,7 @@ app.set('view engine', 'ejs');
 
 // Define a route that renders a form for the user to enter location
 app.get('/', (req, res) => {
-  res.render('weather', {countryList});
+  res.render('weather', {countryList, OPENWEATHER_API_KEY, GOOGLE_MAPS_API_KEY});
 });
 
 // Define a route that handles the form submission and makes a request to the weather API
