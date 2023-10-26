@@ -1,5 +1,10 @@
 /* FILEPATH: /Users/mike/dev/web development/weatherService/public/styles/stylesheets/weatherStyle.css */
 
+@font-face {
+  font-family: "newspaper";
+  src: url("../fonts/Newspaper.ttf");
+}
+
 /* Reset styles */
 * {
   margin: 0;
@@ -9,12 +14,15 @@
 
 /* Body styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f5f5f5;
-  width: 100%;
-  height: 100%;
+  background-color: none;
+  background-image: url("/images/sky-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
@@ -27,8 +35,16 @@ header {
 }
 
 .title {
-  color: rgb(127, 255, 253);
-  background-color: deeppink;
+  font-family: "newspaper", sans-serif;
+  font-size: 5rem;
+  color: rgb(0, 0, 0);
+  background-color: none;
+  backdrop-filter: blur(2.3px);
+  padding: 2rem 3rem;
+}
+
+.title img{
+  height: 7rem;
 }
 
 /* Main content styles */
@@ -49,8 +65,63 @@ footer {
 /* IDs */
 #country {
   color: rgb(0, 0, 0);
+  width: 150px;
 }
 
+.selectionBox {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: none;
+  backdrop-filter: blur(2.3px);
+}
+
+.locationLabel {
+  padding-right: 1rem;
+}
+
+.checkbox {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  background-color: none;
+}
+
+.submitButton {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.weatherBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 2rem auto;
+  padding-bottom: 1.5rem;
+  border-style: groove;
+  border-radius: 3rem;
+  border-color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weatherTitle {
+  padding: 1.5rem;
+}
 
 /* Map */
 #map {
