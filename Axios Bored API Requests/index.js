@@ -31,6 +31,7 @@ app.get("/", async (req, res) => {
 
 // post route
 app.post("/", async (req, res) => {
+  
   // log the request body to the console
   console.log(req.body);
   
