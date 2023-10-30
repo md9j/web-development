@@ -25,13 +25,14 @@ This project list is auto-generated from the `web-development` workspace.
 16. My Site 2
 17. Postman Testing
 18. QR Code Generator
-19. Rollem
-20. Secrets
-21. Simon Game
-22. TindogSite
-23. calculatorSite
-24. html personal site
-25. jQuery
-26. my-express-server
-27. weatherService
+19. Random API
+20. Rollem
+21. Secrets
+22. Simon Game
+23. TindogSite
+24. calculatorSite
+25. html personal site
+26. jQuery
+27. my-express-server
+28. weatherService
 <!-- END: projects list -->
