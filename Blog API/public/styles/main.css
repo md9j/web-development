@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "journal";
+  src: url("../fonts/Gastony\ Signature.otf");
+}
+
 /* Reset some default browser styles */
 body,
 h1,
@@ -17,6 +22,11 @@ a {
 
 body {
   background-color: #f7f9fc;
+  background-image: url(../images/brownLeather.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: fixed;
   color: #333;
   line-height: 1.6;
 }
@@ -24,7 +34,7 @@ body {
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: rgb(215,202,189);
   padding: 20px 40px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -40,6 +50,26 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #555;
+}
+
+.titleBar {
+  background-color: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "journal", serif;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.titleImage {
+  /* background-image: url(../images/strangeMetalFingersNoBG.png); */
+  color: #ae27a0;
+  width: 100;
+  height: 200px;
 }
 
 p,
@@ -108,12 +138,12 @@ li:last-child {
 }
 
 a.edit {
-  background-color: #007bff;
+  background-color: #7D9D9C;
   /* margin-right: 10px; */
 }
 
 a.delete {
-  background-color: #e74c3c;
+  background-color: #874C62;
 }
 
 a.delete:hover {
@@ -122,7 +152,7 @@ a.delete:hover {
 
 #newPostBtn {
   margin: 20px 0;
-  background-color: #2ecc71;
+  background-color: #42855B;
   padding: 10px 15px;
   font-size: 1em;
   border-radius: 4px;
