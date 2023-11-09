@@ -43,7 +43,7 @@ body {
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #444;
+  color: #483838;
 }
 
 h2 {
@@ -130,7 +130,7 @@ ul {
 
 li {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #483838;
 }
 
 li:last-child {
