@@ -3,6 +3,11 @@
   src: url("../fonts/Gastony\ Signature.otf");
 }
 
+@font-face {
+  font-family: "journal2";
+  src: url("../fonts/JOURNAL.TTF");
+}
+
 /* Reset some default browser styles */
 body,
 h1,
@@ -22,7 +27,8 @@ a {
 
 body {
   background-color: #f7f9fc;
-  background-image: url(../images/brownLeather.jpg);
+  background-image: url(../images/leatherRoughedUp.jpg);
+  /* backdrop-filter: blur(1px); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +48,7 @@ body {
 
 h1 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #483838;
 }
 
@@ -53,23 +59,30 @@ h2 {
 }
 
 .titleBar {
+  position: relative;
   background-color: none;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 
 .title {
   font-family: "journal", serif;
-  font-size: 5rem;
-  margin-bottom: 2rem;
+  font-size: 6rem;
 }
 
 .titleImage {
-  /* background-image: url(../images/strangeMetalFingersNoBG.png); */
   color: #ae27a0;
   width: 100;
   height: 200px;
+}
+
+.subtitle {
+  font-family: "journal", serif;
+  font-size: 1.5rem;
+  color: #483838;
+  margin-left: auto;
+  width: fit-content ;
+  margin-right: 0%;
 }
 
 p,
