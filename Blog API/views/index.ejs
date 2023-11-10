@@ -12,10 +12,12 @@
 <body>
   <div class="container">
     <div class="titleBar">
-    <h1 class="title">Softcover</h1>
-    <a id="newPostBtn" href="/new">New Post</a>
+      <h1 class="title">Softcover</h1>
+      <p class="subtitle">...for the random scriblings of the moment</p>
     </div>
+    <br>
     <ul id="postsList">
+      <a id="newPostBtn" href="/new">New Post</a>
       <% posts.forEach(post=> { %>
         <li>
           <h2>
