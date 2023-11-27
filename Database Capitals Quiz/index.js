@@ -42,7 +42,6 @@ let currentQuestion = {};
 app.get("/", async (req, res) => {
   totalCorrect = 0;
   await nextQuestion();
-  console.log(currentQuestion);
   res.render("index.ejs", { question: currentQuestion });
 });
 
@@ -68,6 +67,7 @@ async function nextQuestion() {
   const randomCountry = quiz[Math.floor(Math.random() * quiz.length)];
 
   currentQuestion = randomCountry;
+  console.log(currentQuestion);
 }
 
 app.listen(port, () => {
