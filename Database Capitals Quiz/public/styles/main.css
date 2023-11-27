@@ -105,13 +105,14 @@ button:hover {
 
 .restart-button {
   display: inline-block;
-  background-color: #fff;
-  color: #333;
+  background-color: black;
+  color: rgb(236,210,110);
   padding: 15px 30px;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
   border-radius: 30px;
+  border: 2px solid rgb(236,210,110);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, color 0.3s;
 }
